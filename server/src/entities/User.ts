@@ -18,7 +18,7 @@ export class Post {
   updatedAt = new Date();
 
   @Field()
-  @Property({type: 'text'})
+  @Property({type: 'text', unique: true})
   title!: string;
 
 }
